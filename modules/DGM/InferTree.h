@@ -3,6 +3,7 @@
 #pragma once
 
 #include "MessagePassing.h"
+#include <deque>
 
 namespace DirectGraphicalModels 
 {
