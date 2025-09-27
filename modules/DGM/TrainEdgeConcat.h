@@ -83,7 +83,7 @@ namespace DirectGraphicalModels
 		* @brief Returns the data-dependent edge potentials
 		* @details This function returns edge potential matrix, which elements are obrained from the unary potential vector: 
 		* \f[ edgePot[nStates][nStates] = nodePot[nStates^2] = f(concat(\textbf{f}_1[nFeatures],\textbf{f}_2[nFeatures])). \f]
-		* The resulting edge potential matrix is normalized such that its largest element is equal to paramter \f$\theta\f$, and then regularized as follows:
+		* The resulting edge potential matrix is normalized such that its largest element is equal to parameter \f$\theta\f$, and then regularized as follows:
 		* \f[ edgePot_{s,s} = \left\{\begin{array}{ll} 1 &\mbox{ if $edgePot_{s,s}<1$} \\ edgePot_{s,s} &\mbox{ otherwise}\end{array} \right.\;\;\;\forall s\in\mathbb{S}.\f]
 		* @todo: Incorporate the node potential weight into the model parameters
 		* @param featureVector1 Multi-dimensinal point \f$\textbf{f}_1\f$: Mat(size: nFeatures x 1; type: CV_8UC1), corresponding to the first node of the edge
